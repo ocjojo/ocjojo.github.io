@@ -1,0 +1,27 @@
+{
+  "name": "lukas_explores",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocjojo/ocjojo.github.io.git"
+  },
+  "author": "Lukas Ehnle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ocjojo/ocjojo.github.io/issues"
+  },
+  "homepage": "https://github.com/ocjojo/ocjojo.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "normalize.css": "^4.2.0",
+    "recursive-readdir": "^2.1.0"
+  }
+}

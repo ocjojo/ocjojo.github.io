@@ -1,0 +1,74 @@
+header
+{
+    position: absolute;
+    z-index: 2;
+
+    width: 100%;
+    padding: 10px 30px;
+
+    transition: background-color .3s;
+    transition-delay: 0;
+    text-align: right;
+
+    background-color: transparent;
+}
+header.fixed
+{
+    position: fixed;
+
+    transition-delay: .4s;
+
+    background-color: #fff;
+}
+#logo
+{
+    position: absolute;
+
+    transition: transform .6s;
+    transform: translate(-30px, -10px) translate(50vw, 50vh) scale(4);
+    transform-origin: 50% 50%;
+    text-align: left;
+}
+header.fixed #logo
+{
+    transform: none;
+}
+#logo .lukas
+{
+    font-family: Anders;
+    font-size: 32px;
+}
+#logo .explores
+{
+    font-family: 'Quicksand', sans-serif;
+
+    display: block;
+
+    margin-top: -7px;
+
+    text-indent: -1px;
+}
+
+menu
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+
+    margin: 10px 0 8px;
+}
+
+menu a
+{
+    line-height: 0;
+    padding: 0 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+menu a:hover,
+menu a.active {
+    border-bottom-color: #333;
+}
+menu a.active {
+    border-top-color: #333;
+}
