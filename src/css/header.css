@@ -10,6 +10,7 @@ header
     transition-delay: 0;
     text-align: right;
 
+    color: #fff;
     background-color: transparent;
 }
 header.fixed
@@ -18,14 +19,14 @@ header.fixed
 
     transition-delay: .4s;
 
-    background-color: #fff;
+    background-color: rgba(0,0,0,0.8);
 }
 #logo
 {
     position: absolute;
 
     transition: transform .6s;
-    transform: translate(-30px, -10px) translate(50vw, 50vh) scale(4);
+    transform: translate(-60px, -10px) translate(50vw, 35vh) scale(4);
     transform-origin: 50% 50%;
     text-align: left;
 }
@@ -44,7 +45,7 @@ header.fixed #logo
 
     display: block;
 
-    margin-top: -7px;
+    margin-top: -4px;
 
     text-indent: -1px;
 }
@@ -53,22 +54,35 @@ menu
 {
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
+    text-align: center;
+    transform: translate(-2vw,calc(35vh + 150px)) scale(2.5);
 
     margin: 10px 0 8px;
+
+    transition: all .6s;
+}
+header.fixed menu {
+    transform: none;
+    text-align: right;
 }
 
 menu a
 {
     line-height: 0;
+
     padding: 0 10px;
+
     text-decoration: none;
+
     border: 1px solid transparent;
 }
 
 menu a:hover,
-menu a.active {
-    border-bottom-color: #333;
+menu a.active
+{
+    border-bottom-color: #fff;
 }
-menu a.active {
-    border-top-color: #333;
+menu a.active
+{
+    border-top-color: #fff;
 }

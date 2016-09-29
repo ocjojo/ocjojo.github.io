@@ -32,10 +32,14 @@
 		else menuActive(false);
 	};
 
-	
-	$(window).scroll(function(){
+	var scrollHandler = function() {
 		fixHeader();
 		menuListener();
+	};
+
+	$(window).scroll(function(){
+		window.requestAnimationFrame(scrollHandler);
+		
 	});
 
 	menuEntries = $('menu a')
