@@ -32,6 +32,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	concat = require('gulp-concat'),
+	markdown = require('gulp-markdown'),
 	readdir = require('recursive-readdir'),
 	path = require('path'),
 	exec = require('child_process').exec,
@@ -79,6 +80,17 @@ gulp.task('css', function(){
 		.pipe(concat('style.css'))
 		.on('error', errorlog)
 		.pipe(gulp.dest('bin'));
+	});
+});
+
+gulp.task('md', function(){
+	readdir('posts', [ignoreFunc], function (err, files) {
+		gulp.src(files)
+		.pipe(markdown())
+		.pipe(rename(function (path) {
+		    path.basename = path.basename.replace(/\s+/g, '-').toLowerCase();
+		}))
+		.pipe(gulp.dest('bin/posts'));
 	});
 });
 
