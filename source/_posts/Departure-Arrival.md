@@ -1,3 +1,11 @@
+---
+title: Departure & Arrival
+date: 2016-11-01
+tags:
+category: Brazil
+image: https://farm6.staticflickr.com/5527/30801728990_0ef8529862_b.jpg
+---
+
 ## Departure/Arrival<br>Tuesday 01.11.2016
 
 So today my 6 week travel/project in Brazil started. I am writing this from my dormroom of a hostel (I think it is one).

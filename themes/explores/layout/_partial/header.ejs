@@ -1,0 +1,11 @@
+<header <% if(is_post()){ %> class="fixed" <% } %> >
+	<div id="logo">
+		<span class="lukas">Lukas</span>
+		<span class="explores">explores.com</span>
+	</div>
+	<menu>
+		<% for (var i in config.categories){ %>
+		<a href="<%- url_for(config.categories[i]) %>"><%= i %></a>
+		<% } %>
+	</menu>
+</header>

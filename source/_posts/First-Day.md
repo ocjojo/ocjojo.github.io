@@ -1,3 +1,11 @@
+---
+title: First Day
+date: 2016-11-02
+tags:
+category: Brazil
+image: https://farm6.staticflickr.com/5527/30801728990_0ef8529862_b.jpg
+---
+
 ## First Day<br>Wednesday 02.11.2016
 
 My roommates arrived around 23:00, they are Hector from Mexico, Stefano from Italy and dutch Suzanna. They are really cool. While Hector and Stefano have been here for quite a while and are finishing their projects in the next weeks, Suzanna arrived two weeks ago and is starting in the same project as I am.
