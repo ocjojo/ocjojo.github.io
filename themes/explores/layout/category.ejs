@@ -1,0 +1,9 @@
+<section class="with-image category" style="background-image: url('<%= page.posts.first().image %>');">
+<% page.posts.each((post) => { %>
+	<div class="post">
+		<div class="date"><%= post.date.format("DD.MM.YYYY") %></div>
+		<div class="title"><%= post.title %></div>
+		<a class="btn" href="<%- url_for(post.path) %>">Read</a>
+	</div>
+<% }) %>
+</section>

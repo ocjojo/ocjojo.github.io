@@ -1,21 +1,37 @@
 <main>
-  <section class="with-image above-the-fold" style="background-image: url('<%= config.header_image %>');">  
-  </section>
-  <% site.categories.each(function(cat){ %>
-    <% var posts = cat.posts.sort('date', -1).limit(2).data %>
-    <% if(posts) { %>
+  <section class="with-image above-the-fold" style="background-image: url('<%= config.header_image %>');"></section>
+  <% site.categories.sort('name').each((cat) => {
+    var posts = cat.posts.sort('date', -1).limit(2).data;
+    if(posts && cat.name != 'hidden') { %>
     <div class="section-header">
-      <h2 id="<%= cat.name %>"><%= cat.name %></h2>
+      <h2 id="<%= cat.name.toLowerCase() %>"><%= cat.name %></h2>
     </div>
     <section class="with-image" style="background-image: url('<%= posts[0].image %>');">
       <div class="container">
-        <div class="content">
+        <div class="content <%= cat.name.toLowerCase() %>">
           <%- posts[0].content %>
           <% if(posts.length > 1) { %>
-          <a href="<%- url_for(posts[1].path) %>">more</a>
+          <a class="prev-post btn" href="<%- url_for(posts[1].path) %>">Previous Post</a>
           <% } %>
+          <a class="category btn" href="<%- url_for(cat.path) %>">Posts about <%= cat.name %></a>
         </div>
       </div>
     </section>
   <% }}) %>
+
+  <% var about = site.posts.findOne({'title': 'About'}) %>
+  <div class="section-header">
+    <h2 id="about">About</h2>
+  </div>
+  <section class="about with-image" style="background-image: url('<%= about.image %>');">
+    <div class="about-header">
+      <a href="https://github.com/ocjojo"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <img src="https://scontent.ffor2-1.fna.fbcdn.net/v/t1.0-1/p320x320/15135815_10202485864825567_4553054351238310590_n.jpg?oh=c864d6a71b7e03c3b85de71868fb4276&oe=58AED469">
+      <a href="https://www.instagram.com/lukas_explores/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div class="about-content">
+      <%- about.content %>
+    </div>
+  </section>
+  
 </main>

@@ -11,9 +11,9 @@ language: en
 timezone:
 
 header_image: https://c8.staticflickr.com/6/5480/30724277295_b98bba3dce_k.jpg
-categories:
-  Brazil: /#Brazil
-  Web: /#web
+menu:
+  Brazil: /#brazil
+  # Web: /#web
   About: /#about
 
 # URL

@@ -1,11 +1,13 @@
-<header <% if(is_post()){ %> class="fixed" <% } %> >
+<header <% if(!is_home()){ %> class="fixed" <% } %> >
+	<a href="/">
 	<div id="logo">
 		<span class="lukas">Lukas</span>
 		<span class="explores">explores.com</span>
 	</div>
+	</a>
 	<menu>
-		<% for (var i in config.categories){ %>
-		<a href="<%- url_for(config.categories[i]) %>"><%= i %></a>
+		<% for (var i in config.menu){ %>
+		<a href="<%- url_for(config.menu[i]) %>"><%= i %></a>
 		<% } %>
 	</menu>
 </header>
