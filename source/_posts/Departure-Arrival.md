@@ -15,6 +15,8 @@ As I am new to blogging feedback is welcome and appreciated.
 
 ----------
 
+## Departure
+
 I am going to describe impressions and feelings that I had during the day:
 
 - Monday 9:00 (yes, the day before) my alarm clock rings the first time. I still need to do some stuff, as I always postponed it during the last few days. (Online Checkin, organize english insurance confirmation, buy presents for my hosts and stuff for the Global Village, prepare some tasks for my project, finish tasks for the NIST, most importantly pack my stuff)
